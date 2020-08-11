@@ -1,0 +1,86 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Interactive chart</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.1.1.min.js" integrity="sha384-xIGPmVtaOm+z0BqfSOMn4lOR6ciex448GIKG4eE61LsAvmGj48XcMQZtKcE/UXZe" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="72461a92-f63f-4464-8be2-9670f7ea6c6f" data-root-id="3836"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="4057">
+          {"d36f79ed-4937-4308-8f7e-7ec85a6e9640":{"roots":{"references":[{"attributes":{"children":[{"id":"3834"},{"id":"3835"}],"sizing_mode":"scale_width"},"id":"3836","type":"Column"},{"attributes":{},"id":"3800","type":"LinearScale"},{"attributes":{},"id":"3810","type":"PanTool"},{"attributes":{},"id":"3798","type":"LogScale"},{"attributes":{"text":"2020-07-28","text_color":"#eeeeee","text_font_size":"70px","x":136.9,"y":260.8},"id":"3826","type":"Label"},{"attributes":{"axis_label":"Number of Hospitalized Patients","formatter":{"id":"3934"},"ticker":{"id":"3807"}},"id":"3806","type":"LinearAxis"},{"attributes":{},"id":"3936","type":"UnionRenderers"},{"attributes":{"below":[{"id":"3802"}],"center":[{"id":"3805"},{"id":"3809"},{"id":"3826"}],"left":[{"id":"3806"}],"plot_height":200,"renderers":[{"id":"3831"}],"sizing_mode":"scale_width","title":{"id":"3792"},"toolbar":{"id":"3817"},"x_range":{"id":"3794"},"x_scale":{"id":"3798"},"y_range":{"id":"3796"},"y_scale":{"id":"3800"}},"id":"3791","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"3811","type":"WheelZoomTool"},{"attributes":{"text":"Daily SARS-CoV-2 Report - Mexico"},"id":"3792","type":"Title"},{"attributes":{"ticker":null},"id":"3932","type":"LogTickFormatter"},{"attributes":{},"id":"3814","type":"ResetTool"},{"attributes":{},"id":"3807","type":"BasicTicker"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"3816","type":"BoxAnnotation"},{"attributes":{"overlay":{"id":"3816"}},"id":"3812","type":"BoxZoomTool"},{"attributes":{"axis_label":"Number of Reported Cases (Logarithmic Scale)","formatter":{"id":"3932"},"ticker":{"id":"3824"}},"id":"3802","type":"LogAxis"},{"attributes":{"end":1596672000000.0,"format":"%d %b %Y","sizing_mode":"scale_width","start":1578873600000.0,"title":"Date","value":1578873600000.0},"id":"3833","type":"DateSlider"},{"attributes":{"children":[{"id":"3833"}],"sizing_mode":"scale_width"},"id":"3835","type":"Row"},{"attributes":{"data_source":{"id":"3790"},"glyph":{"id":"3829"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3830"},"selection_glyph":null,"view":{"id":"3832"}},"id":"3831","type":"GlyphRenderer"},{"attributes":{"axis":{"id":"3802"},"ticker":null},"id":"3805","type":"Grid"},{"attributes":{"high":0,"low":0.0,"palette":["#3288bd","#99d594","#e6f598","#fee08b","#fc8d59","#d53e4f"]},"id":"3827","type":"LinearColorMapper"},{"attributes":{"end":1369.0,"start":1},"id":"3794","type":"Range1d"},{"attributes":{"end":326.0},"id":"3796","type":"Range1d"},{"attributes":{},"id":"3813","type":"SaveTool"},{"attributes":{"data":{"CASES":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0],"DECEASED":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"DECEASED_SIZE":[15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0,15.0],"HOSPITALIZED":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"STATE":["AGUASCALIENTES","BAJA CALIFORNIA","BAJA CALIFORNIA SUR","CAMPECHE","CHIAPAS","CHIHUAHUA","CIUDAD DE M\u00c9XICO","COAHUILA DE ZARAGOZA","COLIMA","DURANGO","GUANAJUATO","GUERRERO","HIDALGO","JALISCO","MICHOAC\u00c1N DE OCAMPO","MORELOS","M\u00c9XICO","NAYARIT","NUEVO LE\u00d3N","OAXACA","PUEBLA","QUER\u00c9TARO","QUINTANA ROO","SAN LUIS POTOS\u00cd","SINALOA","SONORA","TABASCO","TAMAULIPAS","TLAXCALA","VERACRUZ DE IGNACIO DE LA LLAVE","YUCAT\u00c1N","ZACATECAS"]},"selected":{"id":"3935"},"selection_policy":{"id":"3936"}},"id":"3790","type":"ColumnDataSource"},{"attributes":{"source":{"id":"3790"}},"id":"3832","type":"CDSView"},{"attributes":{"ticks":[10,100,500,1000,1500,2000]},"id":"3824","type":"FixedTicker"},{"attributes":{"axis":{"id":"3806"},"dimension":1,"ticker":null},"id":"3809","type":"Grid"},{"attributes":{},"id":"3934","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.7},"fill_color":{"field":"DECEASED","transform":{"id":"3827"}},"line_alpha":{"value":0.7},"line_color":{"value":"#7c7e71"},"line_width":{"value":0.9},"size":{"field":"DECEASED_SIZE","units":"screen"},"x":{"field":"CASES"},"y":{"field":"HOSPITALIZED"}},"id":"3829","type":"Circle"},{"attributes":{},"id":"3815","type":"HelpTool"},{"attributes":{},"id":"3935","type":"Selection"},{"attributes":{"children":[{"id":"3791"}],"sizing_mode":"scale_width"},"id":"3834","type":"Row"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"3810"},{"id":"3811"},{"id":"3812"},{"id":"3813"},{"id":"3814"},{"id":"3815"}]},"id":"3817","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"field":"DECEASED","transform":{"id":"3827"}},"line_alpha":{"value":0.1},"line_color":{"value":"#7c7e71"},"line_width":{"value":0.9},"size":{"field":"DECEASED_SIZE","units":"screen"},"x":{"field":"CASES"},"y":{"field":"HOSPITALIZED"}},"id":"3830","type":"Circle"}],"root_ids":["3836"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('4057').textContent;
+                  var render_items = [{"docid":"d36f79ed-4937-4308-8f7e-7ec85a6e9640","root_ids":["3836"],"roots":{"3836":"72461a92-f63f-4464-8be2-9670f7ea6c6f"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
